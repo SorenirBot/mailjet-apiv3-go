@@ -259,30 +259,34 @@ func (c *Client) SendMailV31(data *MessagesV31, options ...RequestOptions) (*Res
 	}
 	defer r.Body.Close()
 
-	decoder := json.NewDecoder(r.Body)
+	// decoder := json.NewDecoder(r.Body)
+	body, err := io.ReadAll(r.Body)
+	if err != nil {
+		return nil, err
+	}
 
 	switch r.StatusCode {
 	case http.StatusOK:
 
 		var res ResultsV31
-		if err := decoder.Decode(&res); err != nil {
-			return nil, err
+		if err := json.Unmarshal(body, &res); err != nil {
+			return nil, fmt.Errorf("failed to unmarshal response (%d): %v\n%s", r.StatusCode, err, string(body))
 		}
 		return &res, nil
 
 	case http.StatusBadRequest, http.StatusForbidden:
 
 		var apiFeedbackErr APIFeedbackErrorsV31
-		if err := decoder.Decode(&apiFeedbackErr); err != nil {
-			return nil, err
+		if err := json.Unmarshal(body, &apiFeedbackErr); err != nil {
+			return nil, fmt.Errorf("failed to unmarshal response (%d): %v\n%s", r.StatusCode, err, string(body))
 		}
 		return nil, &apiFeedbackErr
 
 	default:
 
 		var errInfo ErrorInfoV31
-		if err := decoder.Decode(&errInfo); err != nil {
-			return nil, err
+		if err := json.Unmarshal(body, &errInfo); err != nil {
+			return nil, fmt.Errorf("failed to unmarshal response (%d): %v\n%s", r.StatusCode, err, string(body))
 		}
 		return nil, &errInfo
 	}
