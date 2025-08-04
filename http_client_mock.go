@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/SorenirBot/mailjet-apiv3-go/v4/fixtures"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/fixtures"
 )
 
 // HTTPClientMock definition
