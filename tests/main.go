@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v4"
+	"github.com/SorenirBot/mailjet-apiv3-go/v4/resources"
 )
 
 var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")

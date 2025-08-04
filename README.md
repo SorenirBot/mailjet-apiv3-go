@@ -7,9 +7,9 @@
 
 # Official Mailjet Go Client
 
-[![CI](https://github.com/mailjet/mailjet-apiv3-go/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/mailjet/mailjet-apiv3-go/actions/workflows/main.yml)
-[![GoDoc](https://godoc.org/github.com/mailjet/mailjet-apiv3-go?status.svg)](https://pkg.go.dev/github.com/mailjet/mailjet-apiv3-go/v4)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mailjet/mailjet-apiv3-go/v4)](https://goreportcard.com/report/github.com/mailjet/mailjet-apiv3-go/v4)
+[![CI](https://github.com/SorenirBot/mailjet-apiv3-go/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/SorenirBot/mailjet-apiv3-go/actions/workflows/main.yml)
+[![GoDoc](https://godoc.org/github.com/SorenirBot/mailjet-apiv3-go?status.svg)](https://pkg.go.dev/github.com/SorenirBot/mailjet-apiv3-go/v5)
+[![Go Report Card](https://goreportcard.com/badge/github.com/SorenirBot/mailjet-apiv3-go/v5)](https://goreportcard.com/report/github.com/SorenirBot/mailjet-apiv3-go/v5)
 
 ## Overview
 
@@ -50,15 +50,15 @@ But since [each major Go release is supported until there are two newer major re
 Get package:
 
 ```
-go get github.com/mailjet/mailjet-apiv3-go/v4
+go get github.com/SorenirBot/mailjet-apiv3-go/v5
 ```
 
 And import the Mailjet wrapper:
 
 ```go
 import (
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/resources"
 )
 ```
 
@@ -101,7 +101,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
 )
 
 func main() {
@@ -156,7 +156,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
 )
 
 // Set the http client with the given proxy url
@@ -225,8 +225,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/resources"
 )
 
 func main() {
@@ -261,8 +261,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/resources"
 )
 
 func main() {
@@ -308,8 +308,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/resources"
 )
 
 func main() {
@@ -333,8 +333,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/resources"
 )
 
 func main() {
@@ -358,8 +358,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/resources"
 )
 
 func main() {
@@ -391,8 +391,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
-	"github.com/mailjet/mailjet-apiv3-go/v4/resources"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5/resources"
 )
 
 func main() {
@@ -438,7 +438,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mailjet/mailjet-apiv3-go/v4"
+	"github.com/SorenirBot/mailjet-apiv3-go/v5"
 )
 
 func main() {

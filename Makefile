@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
 
-PACKAGE := github.com/mailjet/mailjet-apiv3-go
+PACKAGE := github.com/SorenirBot/mailjet-apiv3-go
 GOPATH=$(shell go env GOPATH)
 
 NILAWAY = $(GOPATH)/bin/nilaway

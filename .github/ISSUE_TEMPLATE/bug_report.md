@@ -24,7 +24,7 @@ Since the Go release is supported until there are two newer major releases, ther
 
 **mailjet-apiv3-go release**
 Specify mailjet-apiv3-go release version.
-It should be the latest from https://github.com/mailjet/mailjet-apiv3-go/releases. If not, update to the latest and try to reproduce the bug.
+It should be the latest from https://github.com/SorenirBot/mailjet-apiv3-go/releases. If not, update to the latest and try to reproduce the bug.
 
 **Additional context**
 Please feel free to add any other context about the problem here.
